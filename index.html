@@ -1100,73 +1100,75 @@
                 flex: 0 0 82%;
             }
         }
-/* ── Instagram Reels Row ── */
-.ig-row {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
-    padding: 0 48px;
-    margin-bottom: 56px;
-}
 
-.ig-card {
-    position: relative;
-    background: var(--card);
-    border: 1px solid var(--border);
-    overflow: hidden;
-    transition: border-color 0.3s, transform 0.3s;
-}
+        /* ── Instagram Reels Row ── */
+        .ig-row {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+            padding: 0 48px;
+            margin-bottom: 56px;
+        }
 
-.ig-card:hover {
-    border-color: rgba(200, 168, 130, 0.55);
-    transform: translateY(-4px);
-}
+        .ig-card {
+            position: relative;
+            background: var(--card);
+            border: 1px solid var(--border);
+            overflow: hidden;
+            transition: border-color 0.3s, transform 0.3s;
+        }
 
-.ig-card iframe {
-    display: block;
-    width: 100%;
-    height: 640px;
-    border: none;
-    background: var(--card);
-}
+        .ig-card:hover {
+            border-color: rgba(200, 168, 130, 0.55);
+            transform: translateY(-4px);
+        }
 
-.ig-card-footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 12px 18px;
-    border-top: 1px solid var(--border);
-    font-family: 'Space Mono', monospace;
-    font-size: 0.6rem;
-    letter-spacing: 0.15em;
-    text-transform: uppercase;
-}
+        .ig-card iframe {
+            display: block;
+            width: 100%;
+            height: 720px;
+            border: none;
+            background: var(--card);
+        }
 
-.ig-card-footer span {
-    color: var(--amber);
-}
+        .ig-card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 18px;
+            border-top: 1px solid var(--border);
+            font-family: 'Space Mono', monospace;
+            font-size: 0.6rem;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+        }
 
-.ig-card-footer a {
-    color: var(--muted);
-    text-decoration: none;
-    transition: color 0.25s;
-}
+        .ig-card-footer span {
+            color: var(--amber);
+        }
 
-.ig-card-footer a:hover {
-    color: var(--amber);
-}
+        .ig-card-footer a {
+            color: var(--muted);
+            text-decoration: none;
+            transition: color 0.25s;
+        }
 
-@media (max-width: 900px) {
-    .ig-row {
-        grid-template-columns: 1fr;
-        padding: 0 24px;
-        margin-bottom: 40px;
-    }
+        .ig-card-footer a:hover {
+            color: var(--amber);
+        }
 
-    .ig-card iframe {
-        height: 600px;
-    }
-}
+        @media (max-width: 900px) {
+            .ig-row {
+                grid-template-columns: 1fr;
+                padding: 0 24px;
+                margin-bottom: 40px;
+            }
+
+            .ig-card iframe {
+                height: 680px;
+            }
+        }
+
         /* ── Brands Marquee ── */
         #brands {
             padding: 80px 0;
@@ -1638,10 +1640,6 @@
                 justify-content: center;
             }
 
-            .scroll-indicator {
-                display: none;
-            }
-
             body {
                 cursor: auto;
             }
@@ -1670,8 +1668,6 @@
                 font-size: 0.68rem;
                 padding: 13px 22px;
             }
-
-
 
             .social-row {
                 flex-direction: column;
@@ -2046,56 +2042,84 @@
             <p class="work-note fade-up delay-2">Cinematic edits, brand reels, and action cuts — straight from the
                 timeline.</p>
         </div>
+
         <!-- Instagram Reels Row -->
-<div class="ig-row fade-up delay-1">
-    <div class="ig-card">
-        <iframe src="https://www.instagram.com/reel/DcnJkb6IlSc/embed" loading="lazy" allowfullscreen scrolling="no"></iframe>
-        <div class="ig-card-footer"><span>Instagram 01</span><a href="https://www.instagram.com/reel/DcnJkb6IlSc/" target="_blank" rel="noopener">Open ↗</a></div>
-    </div>
-    <div class="ig-card">
-        <iframe src="https://www.instagram.com/reel/DZ4HURGIpfk/embed" loading="lazy" allowfullscreen scrolling="no"></iframe>
-        <div class="ig-card-footer"><span>Instagram 02</span><a href="https://www.instagram.com/reel/DZ4HURGIpfk/" target="_blank" rel="noopener">Open ↗</a></div>
-    </div>
-    <div class="ig-card">
-        <iframe src="https://www.instagram.com/reel/DZ7qTeJITqc/embed" loading="lazy" allowfullscreen scrolling="no"></iframe>
-        <div class="ig-card-footer"><span>Instagram 03</span><a href="https://www.instagram.com/reel/DZ7qTeJITqc/" target="_blank" rel="noopener">Open ↗</a></div>
-    </div>
-</div>
+        <div class="ig-row fade-up delay-1">
+            <div class="ig-card">
+                <iframe src="https://www.instagram.com/reel/DcnJkb6IlSc/embed/" loading="lazy" allowfullscreen
+                    scrolling="no" frameborder="0"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write"></iframe>
+                <div class="ig-card-footer"><span>Instagram 01</span><a
+                        href="https://www.instagram.com/reel/DcnJkb6IlSc/" target="_blank" rel="noopener">Open ↗</a>
+                </div>
+            </div>
+            <div class="ig-card">
+                <iframe src="https://www.instagram.com/reel/DZ4HURGIpfk/embed/" loading="lazy" allowfullscreen
+                    scrolling="no" frameborder="0"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write"></iframe>
+                <div class="ig-card-footer"><span>Instagram 02</span><a
+                        href="https://www.instagram.com/reel/DZ4HURGIpfk/" target="_blank" rel="noopener">Open ↗</a>
+                </div>
+            </div>
+            <div class="ig-card">
+                <iframe src="https://www.instagram.com/reel/DZ7qTeJITqc/embed/" loading="lazy" allowfullscreen
+                    scrolling="no" frameborder="0"
+                    allow="autoplay; encrypted-media; fullscreen; picture-in-picture; clipboard-write"></iframe>
+                <div class="ig-card-footer"><span>Instagram 03</span><a
+                        href="https://www.instagram.com/reel/DZ7qTeJITqc/" target="_blank" rel="noopener">Open ↗</a>
+                </div>
+            </div>
+        </div>
+
         <div class="reels-carousel-wrap fade-up delay-2">
             <div class="reels-track-outer" id="reelsOuter">
                 <div class="reels-track" id="reelsTrack">
                     <div class="reel-slide active">
-                        <iframe src="https://player.vimeo.com/video/1201131135?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201131135?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 01</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201131146?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201131146?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 02</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201130985?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201130985?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 03</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201130996?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201130996?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 04</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201130951?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201130951?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 05</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201130937?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201130937?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 06</div>
                     </div>
                     <div class="reel-slide">
-                        <iframe src="https://player.vimeo.com/video/1201130966?autoplay=0&title=0&byline=0&portrait=0&dnt=1" allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
+                        <iframe
+                            src="https://player.vimeo.com/video/1201130966?autoplay=0&title=0&byline=0&portrait=0&dnt=1"
+                            allowfullscreen loading="lazy" allow="autoplay; fullscreen; picture-in-picture"></iframe>
                         <div class="reel-overlay"></div>
                         <div class="reel-label">Reel 07</div>
                     </div>
@@ -2142,9 +2166,9 @@
                 <img class="brand-logo" src="https://i.ibb.co/GQn5Zf6q/Parera-LOGO.png" alt="Parera">
                 <img class="brand-logo"
                     src="https://i.ibb.co/VYsQJxDc/CC-Stacked-With-Tagline-Registered-White-Yellow-1.png" alt="CC">
-                <div class="marquee-track" id="marqueeTrack">
-                    <img class="brand-logo" src="https://i.ibb.co/d0NM3fpz/logo-Patni.png" alt="Patni">
-                </div>
+                <img class="brand-logo" src="https://i.ibb.co/d0NM3fpz/logo-Patni.png" alt="Patni">
+            </div>
+        </div>
     </section>
 
     <!-- ── QUOTE ── -->
@@ -2413,12 +2437,13 @@
             if (!mTrack || !mOuter) return;
 
             var mClone = mTrack.cloneNode(true);
+            mClone.removeAttribute('id'); // avoid duplicate id
             mClone.setAttribute('aria-hidden', 'true');
             mOuter.appendChild(mClone);
 
             var mStyle = document.createElement('style');
             mStyle.textContent = '#marqueeOuter{display:flex}' +
-                '#marqueeOuter .marquee-track{animation:mScroll 30s linear infinite;flex-shrink:0}' +
+                '#marqueeOuter .marquee-track{animation:mScroll 30s linear infinite;flex-shrink:0;padding-right:80px}' +
                 '#marqueeOuter:hover .marquee-track{animation-play-state:paused}' +
                 '@keyframes mScroll{from{transform:translateX(0)}to{transform:translateX(-100%)}}';
             document.head.appendChild(mStyle);
